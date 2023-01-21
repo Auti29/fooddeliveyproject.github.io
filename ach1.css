@@ -1,0 +1,180 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+/* Enabling Smooth Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navigatina bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 60px;
+}
+/*Navigatina bar : logo*/
+#logo{
+    margin: 8px 37px;
+}
+#logo img{
+    height: 40px;
+    margin: 13px 6px;
+}
+/*Navigatina bar : list styling*/
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 32px;
+    text-decoration: none;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+}
+#home::before{
+    content: "";
+    background: url(../img/bg.jpg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 535px;
+}
+#home h1{ 
+    justify-content: center;
+}
+#home p{ 
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Servieces section */
+#servieces{
+    margin: 30px;
+    display: flex;
+}
+#servieces .box{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    margin: 7px;
+    padding: 10px;
+}
+#servieces .box img{
+    display: block;
+    margin: auto;
+    height: 220px;
+}
+
+/* Clients section */
+#client-section{
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px;
+}
+#clients img{
+    height: 100px;
+}
+
+/* Contact section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(../img/bg2.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+    color: white;
+}
+
+#contact-box input ,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 5px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 5px;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    margin: 10px 10px;
+    padding: 5px 13px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}

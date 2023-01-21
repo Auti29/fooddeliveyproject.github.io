@@ -1,0 +1,44 @@
+/* This file makes the website responsive in phone or any devices  */
+/* Navigation */
+#navbar{
+    display: flex;
+    flex-direction: column;
+    height: 135px;
+}
+
+#navbar ul li a{
+    font-size: 1.2rem;
+    padding: 0px 12px;
+}
+
+/* Home section */
+#home{
+    height: 410px 
+}
+
+#home::before{
+    height: 519px;
+}
+
+/* Servieces section */
+#servieces{
+    display: flex;
+    flex-direction: column;
+}
+
+#servieces .box img{
+    height: 150px;
+}
+
+/* Clients section */
+#clients{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Contact Section */
+
+/* Utility Classes */
+.h-primary{
+    font-size: 1.6rem;
+}
